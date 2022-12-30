@@ -1,44 +1,53 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    /* Config tablet */
     body{
         background-image: linear-gradient(to top, #49a09d, #663898);
     }
 
     section#login{
-        width: 80vw;
+        width: 90vw;
+        height: 280px;
     }
 
     div#img {
         float: left;
-        width: 45%;
+        width: 30%;
         height: 100%;
     }
 
-    div#right{
+    div#form{
         float: right;
-        width: 55%;
+        width: 70%;
+    }
+
+    div#form > p {
+        font-size: 1em;
+        margin: 10px 0px;
     }
 }
 
 @media screen and (min-width:992px) {
+    /* Config desktop */
     body{
         background-image: linear-gradient(to top, #49a09d, #663898);
     }
 
     section#login{
         width: 1000px;
+        height: 350px
     }
 
     div#img{
         float: right;
-        width: 45%;
+        width: 28%;
         height: 100%;
     }
 
     div#form{
         float: left;
-        width: 55%;
+        width: calc(100% - 30%);
     }
 
     div#form > h1 {
@@ -47,5 +56,6 @@
 
     div#form > p {
         font-size: 1.2em;
+        margin: 20px 0px;
      }
 }
